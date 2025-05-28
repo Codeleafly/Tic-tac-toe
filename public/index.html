@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe Multiplayer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="namePrompt">
+    <h2>Enter your name:</h2>
+    <input type="text" id="nameInput" placeholder="Your name">
+    <button onclick="submitName()">Got it</button>
+  </div>
+
+  <div id="game" style="display:none;">
+    <h2 id="status">Waiting for players...</h2>
+    <div id="board"></div>
+    <button id="restartBtn" onclick="restartGame()">Restart Game</button>
+    <footer><p>Powered by Smart Tell Line</p></footer>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
